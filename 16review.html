@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review - 5 STAR HOTEL</title>
+    <link rel="stylesheet" href="17review.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="logo.png" class="logo" alt="LOGO">
+            <ul>
+                <li><a href="./10home.html">HOME</a></li>
+                <li><a href="./1log_in.html">manage</a></li>
+            </ul>
+        </div>
+    
+        <div class="review-form">
+            <h2>Give a Review</h2>
+            <form action="./10home.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

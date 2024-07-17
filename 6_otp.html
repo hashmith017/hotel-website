@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5 STAR FORGET PASSWORD</title>
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="./7_otp.css">
+    </head>
+    <script>
+        function validate(){
+            var num = document.getElementById("PA2").value;
+            var otp = document.getElementById("PA3").value;
+
+            var phone = /^[6-9]\d{9}$/;
+            if(!phone.test(num)){
+                alert("Invalid phonenumber");
+                return false;
+            }
+            var x=/^[0-9]\d{6}+$/;
+            if(!x.test(otp)){
+                alert("Invalid otp");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <h3 class="link"><a href="./1log_in.html">BACK</a></h3>
+            </div>
+            <div class="head">
+                <h1>5 STAR HOTEL PLATFORM-FORGET PASSWORD</h1><br>
+                <p>BEST SERVICES FROM AROUND THE WORLD</p><br>
+            </div>
+            <form action="4forget_pass.html">
+            <div class="box"><br>
+                <legend>MOBILE NUMBER VERIFICATION</legend><br><br>
+                <input type="text" class="user" id="PA2" name="number" placeholder=" MOBILE NUMBER" required><br><br>
+                <input type="text" class="user" id="PA3" name="number" placeholder=" ENTER OTP" required><br><br><br>
+                <button type="submit" class="login" onclick="return validate()" > SUBMIT </button>
+            </div><br>
+            </form>
+        </div>
+    </body>
+</html>

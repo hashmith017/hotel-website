@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 STAR HOTEL HOME PAGE</title>
+    <link rel="stylesheet" href="./15places.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="logo.png" class="logo" alt="LOGO">
+            <ul>
+                <li><a href="./10home.html">home</a></li>
+                <li><a href="#">our hotels</a></li>
+                <li><a href="./1log_in.html">manage</a></li>
+                <li><a href="./12contact.html">contact us</a></li>
+            </ul>
+        </div>
+    </div>
+         
+    <br><h1>Tourist Places</h1><br>
+    <div class="container">
+        <div class="cities">
+            <div class="city" id="city1">
+                <h2>Hyderabad</h2>
+                <img src="hyderabad.jpeg" alt="Hyderabad">
+                <p>Famous Places: Charminar, Golconda Fort, Ramoji Film City</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 5,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 2,000/- per night</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="city" id="city2">
+                <h2>Mumbai</h2>
+                <img src="mumbai.avif" alt="Mumbai">
+                <p>Famous Places: Gateway of India, Marine Drive, Elephanta Caves</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 7,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 1,000/- per night</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city" id="city3">
+                <h2>Kolkata</h2>
+                <img src="kolkata.jpg" alt="Kolkata">
+                <p>Famous Places: Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 8,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 2,500/- per night</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city" id="city4">
+                <h2>Chennai</h2>
+                <img src="chennai.jpg" alt="Chennai">
+                <p>Famous Places: Marina Beach, Kapaleeshwarar Temple, Fort St. George</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 5,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 3,000/- per night</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city" id="city5">
+                <h2>Delhi</h2>
+                <img src="delhi.jpg" alt="Delhi">
+                <p>Famous Places: India Gate, Red Fort, Qutub Minar</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 10,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 9,000/- per night</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city" id="city6">
+                <h2>Dubai</h2>
+                <img src="dubai1.jpg" alt="Dubai">
+                <p>Famous Places: Burj Khalifa, The Dubai Mall, Palm Jumeirah</p>
+                <div class="package-details">
+                    <h3>Package Details</h3>
+                    <div class="flight-details">
+                        <h4>Flights</h4>
+                        <p>Starting at: ₹ 15,000/-</p>
+                    </div>
+                    <div class="hotel-details">
+                        <h4>Hotels</h4>
+                        <p>Starting at: ₹ 12,000/- per night</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cities = document.querySelectorAll(".city");
+            cities.forEach(city => {
+                city.addEventListener("click", function() {
+                    this.classList.toggle("show-info");
+                });
+            });
+        });
+    </script>
+</body>    

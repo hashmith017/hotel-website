@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5 STAR HOTEL signup</title>
+        <link rel="stylesheet" href="3loginsignup.css">
+        <link rel="icon" href="logo.png">
+    </head>
+    <script>
+        function validate(){
+            var name= document.getElementById("US1").value;
+            var phone = document.getElementById("US2").value;
+            var email = document.getElementById("US3").value;
+            var username = document.getElementById("US4").value;
+            var password = document.getElementById("PA1").value;
+
+            var name1 = /^[a-zA-Z\s]+$/;
+            if(!name1.test(name)){
+                alert("Invalid name , please enter valid NAME");
+                return false;
+            }
+
+            var phone1 = /^[6-9]\d{9}$/;
+            if(!phone1.test(phone)){
+                alert("Invalid phonenumber , please enter valid PHONE NUMBER");
+                return false;
+            }
+    
+            var email1 = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+            if (!email1.test(email) || email.length>50) {
+                alert("Invalid email , please enter valid EMAIL ID");
+                return false;
+            }
+    
+            var username1=/^([a-zA-Z0-9]+)([0-9])([a-zA-Z0-9]+)?$/;
+            if(!username1.test(username)||username.length>15){
+                alert("Invalid username , please enter valid USERNAME");
+                return false;
+            }
+
+            var password1=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$?@[\]^_`{|}~])(?=.*\d).{10,}$/;
+            if(!password1.test(password)){
+                alert("Invalid password , please enter valid PASSWORD");
+                return false;
+            }
+
+            
+            return true;
+        }
+    </script>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <img src="logo.png" class="logo" alt="LOGO">
+                <ul>
+                    <li><a href="./10home.html">home</a></li>
+                    <li><a href="#">my profile</a></li>
+                    <li><a href="#">history</a></li>
+                    <li><a href="#">our hotels</a></li>
+                    <li><a href="./12contact.html">contact us</a></li>
+                </ul>
+            </div>
+        <h1>5 STAR HOTEL PLATFORM SIGN UP FORM</h1><br>
+        <p>BEST SERVICES FROM AROUND THE WORLD</p><br>
+        <form action="/sign_up" method="POST">
+        <div class="box1"><br>
+            <legend>SIGN-UP</legend><br>
+            <input type="text" class="user1" id="US1" name="name" placeholder=" NAME" required>
+            <input type="text" class="user1" id="US2" name="mobilenumber" placeholder=" MOBILE NUMBER" required><br>
+            <input type="email" class="user1" id="US3" name="email" placeholder=" EMAIL" required><br>
+            <input type="text" class="user1" id="US4" name="username" placeholder=" USERNAME" required><br>
+            <input type="password" class="user1" id="PA1" name="password" placeholder=" PASSWORD" required><br>
+            <div class="check">
+                <label><input type="checkbox">Show password</label><br>
+                <label><input type="checkbox">Terms and Conditions</label>
+            </div><br>
+            <button type="submit" class="login1" onclick="return validate()"> SIGN UP </button>
+        </div><br>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 STAR HOTEL HOME PAGE</title>
+    <link rel="stylesheet" href="11home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="logo.png" class="logo" alt="LOGO">
+            <ul>
+                <li><a href="#">my profile</a></li>
+                <li><a href="#history">history</a></li>
+                <li><a href="#ourhotels">our hotels</a></li>
+                <li><a href="./1log_in.html">manage</a></li>
+                <li><a href="./12contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="enjoy">
+            <h1>ENJOY YOUR STAY</h1><br>
+            <p>at the 5 STAR HOTEL with multiple facilities in reasonable prices.</p>
+            <p>We have everything you need, Create unforgettable memories in our hotel</p><br>
+            <p>- - - - Modern Amenities - - - -</p>
+            <ul>
+                <li>Swimming pool</li>
+                <li>Restaurant</li>
+                <li>Fitness Station</li>
+            </ul>
+            <div class="ab"><a href="#">Explore</a></div>
+        </div>
+        <div class="book" id="book">
+            <div class="o"><h1>BOOK YOUR ROOMS</h1></div>
+            <div class="date">
+                <input type="date" placeholder="arrival date">
+                <input type="date" placeholder="departure date">
+                <input type="number" placeholder="adults">
+                <select id="cars" name="cars">
+                    <option value="HYDERABAD">HYDERABAD</option>
+                    <option value="KOLKATA">KOLKATA</option>
+                    <option value="DUBAI">DUBAI</option>
+                    <option value="MUMBAI">MUMBAI</option>
+                    <option value="CHENNAI">CHENNAI</option>
+                    <option value="DELHI">DELHI</option>
+                </select>
+                <input type="submit" value="check availability">
+            </div>
+        </div>
+        <div class="history" id="history">
+            <div class="left">
+                <h1>HISTORY OF 5 STAR</h1><br>
+                <p>The history of 5 STAR hotels goes back to the Colonial Era and started with the European aggression in the 17th century. The 1st of many hotels in India were mostly established and operated by the foreign rulers to cater to the colonizers </p><br>
+                <div class="learn"><a href="#">Learn More</a></div>
+            </div>
+            <div class="right">
+                <img src="pic12.jpg" class="images" alt="HOTEL">
+            </div>
+        </div><br>
+        
+        <div class="slideshow-container" id="ourhotels">
+            <br><h1>OUR HOTELS</h1>
+            <div class="mySlides fade">
+                <img src="hotel1.jpg" id="g">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="hotel2.webp" id="g">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="hotel4.png" id="g">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="hotel5.webp" id="g">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <section class="testimonials">
+            <div class="container">
+                <h1>What Our Guests Say</h1>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Amazing experience! The staff was friendly and attentive, the rooms were clean and comfortable, and the amenities were top-notch. Will definitely be returning!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="PERSON1.jpg" alt="User Avatar">
+                        <h3>John Doe</h3>
+                        <p>Guest</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"I had a wonderful stay at the 5 Star Hotel. The location was perfect, the food was delicious, and the service was exceptional. Highly recommend!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="PERSON2.jpg" alt="User Avatar">
+                        <h3>Jane Smith</h3>
+                        <p>Guest</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pc"><a href="./16review.html">TELL US WHAT YOU FEEL</a></div>
+        </section>
+        <br>
+        <div class="rooms1">
+            <div>
+                <br><h1>HOTELS</h1>
+            </div>
+            <div class="rooms">
+                <div class="y">
+                    <img src="main.jpg" class="ima" alt="HYDERABAD">
+                    <p>HYDERABAD</p>
+                    <p>4.6 Rating</p>
+                    <p class="p" style="font-size:medium;"></p>
+                    <p class="c" style="font-size:medium;"></p>
+                    <button class="i" onclick="details()"> Details </button>
+                </div>
+                <div class="y">
+                    <img src="hotel1.jpg" class="ima" alt="MUMBAI">
+                    <p>MUMBAI</p>
+                    <p>4.2 Rating</p>
+                    <p class="p1" style="font-size:medium;"></p>
+                    <p class="c1" style="font-size:medium;"></p>
+                    <button class="i" onclick="details1()"> Details </button>
+                </div>
+                <div class="y"> 
+                    <img src="hotel2.webp" class="ima" alt="KOLKATA">
+                    <p>KOLKATA</p>
+                    <p>4.0 Rating</p>
+                    <p class="p2" style="font-size:medium;"></p>
+                    <p class="c2" style="font-size:medium;"></p>
+                    <button class="i" onclick="details2()"> Details </button>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="y">
+                    <img src="hotel3.jpeg" class="ima" alt="DELHI">
+                    <p>DELHI</p>
+                    <p>3.9 Rating</p>
+                    <p class="p3" style="font-size:medium;"></p>
+                    <p class="c3" style="font-size:medium;"></p>
+                    <button class="i" onclick="details3()"> Details </button>
+                </div>
+                <div class="y">
+                    <img src="hotel4.png" class="ima" alt="CHENNAI">
+                    <p>CHENNAI</p>
+                    <p>4.7 Rating</p>
+                    <p class="p4" style="font-size:medium;"></p>
+                    <p class="c4" style="font-size:medium;"></p>
+                    <button class="i" onclick="details4()"> Details </button>
+                </div>
+                <div class="y"> 
+                    <img src="hotel5.webp" class="ima" alt="DUBAI">
+                    <p>DUBAI</p>
+                    <p>4.0 Rating</p>
+                    <p class="p5" style="font-size:medium;"></p>
+                    <p class="c5" style="font-size:medium;"></p>
+                    <button class="i" onclick="details5()"> Details </button>
+                </div>
+            </div>
+            <br>
+            <div class="pc"><a href="#book">BOOK NOW HERE</a></div>
+            <br>
+            <div class="pc"><a href="./14places.html">BEST PLACES NEAR OUR HOTELS</a></div>
+        </div>
+        <br>
+        <section class="services top">
+            <div class="container">
+                <div class="heading">
+                    <br>
+                    <h1>SERVICES</h1>
+                </div>
+            </div>
+            <div class="content flex">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class='bx bx-swim'></i>
+                            <h3>Swimming Pool</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class='bx bx-dumbbell'></i>
+                            <h3>Fitness</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class='bx bx-restaurant'></i>
+                            <h3>Inhouse Restaurent</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class='bx bx-spa' ></i>
+                            <h3>beauty Spa</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="rooms1">
+            <div>
+                <br><h1>ROOMS</h1>
+            </div>
+            <div class="rooms">
+                <div class="y">
+                    <img src="pic10.jpg" class="ima" alt="DELUX">
+                    <p>DELUX ROOM</p>
+                </div>
+                <div class="y">
+                    <img src="pic11.jpg" class="ima" alt="NORMAL">
+                    <p>NORMAL ROOM</p>
+                </div>
+                <div class="y"> 
+                    <img src="pic13.jpg" class="ima" alt="PREMIUM">
+                    <p>PREMIUM ROOM</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="y">
+                    <img src="pic14.webp" class="ima" alt="LUXURY">
+                    <p>LUXURY ROOM</p>
+                </div>
+                <div class="y">
+                    <img src="pic15.jpg" class="ima" alt="MEGA">
+                    <p>MEGA ROOM</p>
+                </div>
+                <div class="y"> 
+                    <img src="pic16.avif" class="ima" alt="FAM">
+                    <p>FAM ROOM</p>
+                </div>
+            </div><br>
+            <div id="displaytable" class="placeholder">
+                <table id="displaytable2" cellpadding="1" cellspacing="0" border="3">
+                  <tr>
+                    <td> ROOM TYPE / NO OF PEOPLE </td>
+                    <td> 2 BED ROOM </td>
+                    <td> 4 BED ROOM </td>
+                    <td> 6 BED ROOM </td>
+                  </tr>
+                  <tr>
+                    <td>DELUX ROOM</td>
+                    <td>6000/-</td>
+                    <td>10000/-</td>
+                    <td>15000/-</td>
+                  </tr>
+                  <tr>
+                    <td>NORMAL ROOM</td>
+                    <td>7000/-</td>
+                    <td>11000/-</td>
+                    <td>15000/-</td>
+                  </tr>
+                  <tr>
+                    <td>PREMIUM ROOM</td>
+                    <td>8000/-</td>
+                    <td>12000/-</td>
+                    <td>15500/-</td>
+                  </tr>
+                  <tr>
+                    <td>LUXERY ROOM</td>
+                    <td>9000/-</td>
+                    <td>12500/-</td>
+                    <td>16000/-</td>
+                  </tr>
+                  <tr>
+                    <td>MEGA ROOM</td>
+                    <td>9000/-</td>
+                    <td>13000/-</td>
+                    <td>17000/-</td>
+                  </tr>
+                  <tr>
+                    <td>FAM ROOM</td>
+                    <td>9500/-</td>
+                    <td>17000/-</td>
+                    <td>20000/-</td>
+                  </tr>
+                </table>
+              </div><br>
+            <button class="i" id="clickme" onclick="display()"> Details </button>
+        </div>
+        <br>
+        <div class="foot">
+            <div class="fo">
+                <img src="logo.png" class="logo1" alt="LOGO">
+                <p>follow us on</p>
+                <p><a href="https://www.instagram.com/hashmith017?igsh=cmdsZGl1ZHh6NHZl">instagram</a> <a href="#">facebook</a> <a href="#">twitter</a></p>
+            </div><br>
+            <p>- - - - THANK YOU FOR CHOOSING OUR SERVICES - - - -</p><br>
+            <p class="ff">Terms & Conditions apply</p>
+        </div>
+    </div>
+    <script src="9home.js"></script>
+</body>
+</html>

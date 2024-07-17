@@ -1,0 +1,260 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./pic9.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    padding-top: 20px;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #f0f8ff;
+}
+.nav{
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+} 
+.logo{
+    width: 100px;
+    cursor: pointer;
+    filter: brightness(90%);
+}   
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.enjoy ul li{
+    list-style: none;
+    margin: 1px;
+}
+.ab a{
+    color: #e87b7b;
+}
+.book{
+    margin-top: 65px;
+    background-color: rgba(49, 25, 9, 0.792);
+    padding: 40px 0;
+    font-size: large;
+}
+.book input{
+    padding: 25px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.book select{
+    padding: 25px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.book input:nth-last-child(1){
+    color: #ffffff;
+    background: rgba(130, 47, 12, 0.895);
+}
+.o{
+    margin-bottom: 6px;
+}
+.images{
+    padding: 30px;
+    width: 150%;
+    height: 60vh;
+    margin-left: 40%;
+}
+.history{
+    background: #ffffff;
+    color:rgb(48, 7, 4);
+    display: grid;
+    align-items:center;
+    column-gap: 3px;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.left{
+    padding: 50px;
+    margin: 20px;
+}
+.learn a{
+    color: #350909dd;
+}
+#ourhotels{
+    background: white;
+    color: rgb(49, 9, 9);
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+}
+#g{
+    height: 100vh;
+    width: 950px;
+}
+.i{
+    width:80px;
+    height: 30px;
+    background-color:rgb(49, 9, 9);
+    color: white;
+    border-color: white;
+}
+.pc a{
+    color: rgb(49, 9, 9);
+    font-size: xx-large;
+    text-decoration: none;
+}
+.pc :hover{
+    color: rgb(179, 9, 9);
+}
+.rooms1{
+    background: rgb(255, 255, 255);
+    color:rgb(49, 9, 9);
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.rooms{
+    display: grid;
+    column-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2px;
+}
+.ima{
+    padding: 15px;
+    padding-bottom: 2px;
+    width: 100%;
+    height: 65vh;
+}
+.y{
+    text-align: center;
+    font-size: x-large;
+    vertical-align: bottom;
+}
+.services{
+    background-color: #fff;
+    color: rgb(49, 9, 9);
+    position: relative;
+}
+.services h1{
+    font-size: xx-large;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.services .left{
+    padding: 20px 0;
+}
+.services .box{
+    border: 1px solid rgba(0,0,0,0.75);
+    text-align: center; 
+    padding: 20px;
+    width: 250px;
+}
+.services .box .text{
+    padding: 20px 0;
+    border: 1px dashed #fff;
+}
+.services i{
+    font-size: 50px;
+    color: rgb(49, 9, 9);
+}
+.services h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.services .box :hover{
+    background:rgb(49, 9, 9);
+    color: #fff;
+    cursor: pointer;
+}
+.services .box :hover i,
+.services .box :hover h3{
+    color: #fff;
+}
+.hidden{
+    display: none;
+}
+.placeholder table{
+    width:100%;
+    border-radius: 10px;
+    border-color: black;
+}
+.placeholder tr{
+    align-items:center;
+    font-weight: bold;
+}
+.foot{
+    background: rgba(3, 24, 41, 0.863);
+    font-size: x-large;
+    padding: 30px;
+}
+.logo1{
+    width: 100px;
+    cursor: pointer;
+    filter: brightness(70%);
+    padding-bottom: 20px;
+}
+.fo{
+    font-size: medium;
+}
+.fo a{
+    color: bisque;
+}
+.ff{
+    font-size: medium;
+}
+.testimonials{
+    background-color: white;
+    padding: 40px 0;
+    color: rgb(49, 9, 9);
+    padding-left: 50px;
+}
+.testimonials .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.testimonials h1{
+    font-size: xx-large;
+}
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.testimonial-text{
+    flex: 1;
+    text-align: left;
+    font-size: larger;
+}
+.testimonial-author{
+    flex: 1;
+    text-align: center;
+}
+.testimonial-author img{
+    border-radius: 75%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+.testimonial-author h3{
+    margin-bottom: 5px;
+}
+.testimonial-author p{
+    font-size: 14px;
+}

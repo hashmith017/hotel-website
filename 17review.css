@@ -1,0 +1,65 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./pic9.jpg);
+}
+.review-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.nav{
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+} 
+.logo{
+    width: 100px;
+    cursor: pointer;
+    filter: brightness(90%);
+}   
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.review-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.review-form form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.review-form label{
+    font-weight: bold;
+    color: white;
+}
+.review-form input,
+.review-form textarea,
+.review-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.review-form textarea{
+    height: 100px;
+}
+.review-form button{
+    padding: 10px 20px;
+    background-color:rgb(49, 25, 9);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
